@@ -1,7 +1,7 @@
 import { BUY_BIKE } from "./type";
 
 const initialStateBike = {
-  bike: 34
+  bike: 3
 }
 
 const bikeReducer = (state = initialStateBike, action) => {

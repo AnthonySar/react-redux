@@ -1,0 +1,1 @@
+export const BUY_MACBOOK = 'BUY_MACBOOK';

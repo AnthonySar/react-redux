@@ -1,9 +1,11 @@
-import bikeReducer from './bike/reducerBike';
 import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
+import bikeReducer from './bike/reducerBike';
+import macbookReducer from './macbook/reducerMacbook';
 
 const reducer = combineReducers({
-  bike: bikeReducer,
+  reducerBike: bikeReducer,
+  reducerMacbook: macbookReducer
 })
 
 const store = configureStore({
