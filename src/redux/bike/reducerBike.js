@@ -1,7 +1,7 @@
 import { BUY_BIKE } from "./type";
 
 const initialStateBike = {
-  bike: 3
+  bike: 3,
 }
 
 const bikeReducer = (state = initialStateBike, action) => {
@@ -9,7 +9,7 @@ const bikeReducer = (state = initialStateBike, action) => {
     case BUY_BIKE:
       return {
         ...state,
-        bike: state.bike - 1
+        bike: state.bike - action.payload
       }  
     
     default: return state
