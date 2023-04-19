@@ -224,7 +224,7 @@ h1, h2 {
 }
 
 #checklist {
-  --background: #fff;
+  /* --background: #fff; */
   --text: #414856;
   --check: #4f29f0;
   --disabled: #c3c8de;
