@@ -131,7 +131,7 @@ h1, h2 {
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }
 
-.formikContainer h2 {
+.formikContainer h2, .formikUpload h2 {
   margin: 0;
 }
 
@@ -182,7 +182,8 @@ h1, h2 {
   box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 
-.formikContainer button {
+.formikContainer button, 
+.formikUpload button {
   color: white;
   margin-top: 20px;
   background: -webkit-linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
@@ -194,7 +195,8 @@ h1, h2 {
   transition: 0.5s;
 }
 
-.formikGroup button:hover {
+.formikGroup button:hover,
+.formikUpload button:hover {
   box-shadow: none;
 }
 
@@ -426,4 +428,28 @@ h1, h2 {
     opacity: 0;
     box-shadow: 0 -15px 0 0px #4f29f0, 14px -8px 0 0px #4f29f0, 14px 8px 0 0px #4f29f0, 0 15px 0 0px #4f29f0, -14px 8px 0 0px #4f29f0, -14px -8px 0 0px #4f29f0;
   }
+}
+
+.formikUpload {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 40px auto;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.fileUpload {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  padding: 10px;
+  border: 2px dashed;
+  border-radius: 10px;
+  border-color: #5B42F3;
+  margin-bottom: 20px;
+  padding: 40px;
 }

@@ -5,7 +5,7 @@ import Newsletter from './Newsletter';
 it('Test du rendu, inputs et checkbox du formulaire', async () => {
   render(<Newsletter />);
 
-  // Variables
+  // Variables de test - CHECKBOX
   const checkbox1 = screen.getByLabelText('1er Checkbox');
   const checkbox2 = screen.getByLabelText('2ième Checkbox');
   const checkbox3 = screen.getByLabelText('3ième Checkbox');
@@ -27,6 +27,7 @@ it('Test du rendu, inputs et checkbox du formulaire', async () => {
 
   fireEvent.click(checkbox1);
   expect(checkbox1.checked).toBe(false);
+  // Fin CHECKBOX TEST
 
   expect(screen.getByTestId('button-submit')).toBeInTheDocument();
   expect(screen.getByTestId('heading-test')).toHaveTextContent('Test de Formik');

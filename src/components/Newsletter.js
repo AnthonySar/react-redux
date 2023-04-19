@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useFormik } from 'formik';
 
 const Newsletter = () => {
@@ -33,7 +33,8 @@ const Newsletter = () => {
     initialValues: {
       firstName: '',
       lastName: '',
-      email: ''
+      email: '',
+      files: ''
     },
     // Validate fait réfèrence à notre custom fct (gestion des erreurs)
     validate,
