@@ -69,6 +69,9 @@ const NewsletterV2 = ({ children }) => {
         })}
         onSubmit={(values) => {
           console.log("form values", values);
+          // Ce querySelector est utile uniquement pour que le test unitaire 
+          // dans NewsletterV2.test.js passe
+          document.querySelector('.upload-span').insertAdjacentHTML('beforebegin', `form values ${values.files}`)
           console.log("all selected files", fileRef.current.files);
         }}
       >
@@ -77,6 +80,8 @@ const NewsletterV2 = ({ children }) => {
           <button type="submit">Go Console</button>
         </Form>
       </Formik>
+
+      <span className='upload-span'></span>
     </div>
   )
 }

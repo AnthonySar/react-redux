@@ -21,6 +21,7 @@ const FileUpload = ({ fileRef, ...props }) => {
     <div className='fileUpload'>
       {/* <label htmlFor='files'>Choisir un fichier</label> */}
       <input
+      data-testid='input-upload'
         ref={fileRef} 
         type='file'
         multiple={true}
